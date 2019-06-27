@@ -1,0 +1,41 @@
+{
+    "month": {
+        "message" : "January,February,March,April,May,June,July,August,September,October,November,December"
+    },
+    "today": {
+        "message" : "Today"
+    },
+    "mark_read": {
+        "message" : "Mark All as Read"
+    },
+    "badge_text": {
+        "message" : "Unread news:"
+    },
+    "more": {
+        "message" : "Read more"
+    },
+    "nofeeds_message" : {
+        "message" : "Select feeds in the extension settings to display news"
+    },
+    "options_title": {
+        "message" : "Settings"
+    },
+    "options_show_notifications": {
+        "message" : "Show notifications"
+    },
+    "options_hide_notifications": {
+        "message" : "Hide notifications"
+    },
+    "options_show_feed": {
+        "message" : "Show feed"
+    },
+    "options_hide_feed": {
+        "message" : "Hide feed"
+    },
+    "options_time_update": {
+        "message" : "Checking news feeds every:"
+    },
+    "options_time_update_value": {
+        "message" : "60 seconds,5 minutes,15 minutes,30 minutes,1 hour,2 hours"
+    }
+}

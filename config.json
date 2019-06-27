@@ -1,0 +1,22 @@
+{
+    "title": "Demo extension",
+    "site_url": "https://ultraflyer.com/",
+    "badge_color": "#ff0000",
+    "settings_button": "show",
+    "notification_title": "feed_title",
+    "show_extended_options": "yes",
+    "feeds": [
+        {
+            "feed_title": "Website",
+            "feed_url": "http://feeds.feedburner.com/Ultraflyercom",
+            "feed_type": "rss",
+            "feed_view": "small",
+            "feed_image": "hide",
+            "feed_image_type": "enclosure",
+            "feed_description": "show",
+            "feed_more_button": "show",
+            "feed_socials": "tw,fb",
+            "feed_notifications": "yes"
+        }
+    ]
+}

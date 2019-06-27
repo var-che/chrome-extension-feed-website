@@ -1,0 +1,21 @@
+{
+
+    "name": "1EXT",
+    "description": "Extension for grabbing the feeds.",
+    "background": {
+        "page": "background.html"
+    },
+    "default_locale": "en",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2,
+    "permissions": [
+        "tabs",
+        "alarms",
+        "notifications",
+        "*://*/*",
+        "https://avatars.githubusercontent.com/*"
+    ],
+    "version": "0.1"
+}

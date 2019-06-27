@@ -1,0 +1,238 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic);
+
+body {
+    background: #F4F5FB;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+a, select, input {
+    outline: none;
+}
+
+.wrapper {
+    padding: 60px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.wrapper:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.main {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    width: 500px;
+    background: #fff;
+    border: 1px solid #e8ebef;
+}
+
+.header {
+    padding: 20px;
+    border-bottom: 1px solid #e8ebef;
+}
+
+.content {
+    padding: 20px;
+    background: #fafafa;
+}
+
+.option {
+    line-height: 28px;
+    font-size: 16px;
+    border-bottom: 1px solid #e8ebef;
+    padding-bottom: 20px;
+}
+
+.option:last-child {
+    border-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.option span {
+    float: right;
+    border: 1px solid #ecf0f1;
+    background: #fff;
+    padding: 3px;
+    margin-left: 5px;
+    border-radius: 0px;
+}
+
+.option select {
+    height: 28px;
+    float: right;
+    border: 1px solid #ecf0f1;
+    padding: 5px;
+    border-radius: 0px;
+    min-width: 130px;
+    background: #fff;
+}
+
+.option.feeds .feed_item {
+    padding: 5px 0;
+    min-height: 28px;
+    border-bottom: 1px dotted #ECF0F1;
+}
+
+.option.feeds .feed_item:last-child {
+    border-bottom: 0;
+}
+
+.option.feeds label {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.option.feeds input[type="checkbox"] {
+    display: none;
+}
+
+.option.feeds input[type="checkbox"] + label:before {
+    font-family: 'fontello';
+    content: "";
+    cursor: pointer;
+    color: #888888;
+}
+
+.option.feeds .show_check input[type="checkbox"] + label:before {
+    content: "\e803";
+}
+
+.option.feeds .show_check input[type="checkbox"]:checked + label:before {
+    content: "\e802";
+    color: #333333;
+}
+
+.option.feeds .notification_check input[type="checkbox"] + label:before {
+    content: "\e801";
+}
+
+.option.feeds .notification_check input[type="checkbox"]:checked + label:before {
+    content: "\e800";
+    color: #333333;
+}
+
+.tooltip, [data-tooltip] {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip:before, .tooltip:after, [data-tooltip]:before, [data-tooltip]:after {
+    position: absolute;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    pointer-events: none;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-transition-delay: 0ms;
+    -moz-transition-delay: 0ms;
+    transition-delay: 0ms;
+}
+
+.tooltip:hover:before, .tooltip:hover:after, [data-tooltip]:hover:before, [data-tooltip]:hover:after {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    transition-delay: 100ms;
+}
+
+.tooltip:before, [data-tooltip]:before {
+    content: '';
+    position: absolute;
+    background: transparent;
+    border: 6px solid transparent;
+    z-index: 1020;
+}
+
+.tooltip:after, [data-tooltip]:after {
+    content: attr(data-tooltip);
+    background: #383838;
+    color: white;
+    padding: 8px 10px;
+    font-size: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+[data-tooltip='']:before, [data-tooltip='']:after {
+    display: none !important;
+}
+
+.tooltip--top:before {
+    border-top-color: #383838;
+}
+
+.tooltip--top:before {
+    margin-bottom: -12px;
+    margin-left: -6px;
+}
+
+.tooltip--top:after {
+    transform: translateX(-50%);
+}
+
+.tooltip--top:before, .tooltip--top:after {
+    bottom: 100%;
+    left: 50%;
+}
+
+.tooltip--top:hover:after, .tooltip--top:hover:before {
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+.tooltip--top:hover:after {
+    transform: translate3d(-50%, -8px, 0);
+}
+
+.footer {
+    border-top: 1px solid #e8ebef;
+    padding: 20px;
+}
+
+.footer .site-title {
+    display: inline-block;
+    text-align: left;
+}
+
+.footer .site-url {
+    float: right;
+    display: inline-block;
+    text-align: right;
+}
+
+.footer .site-url a {
+    color: #3B99FC;
+    text-decoration: none;
+}
+
+.footer .site-url a:hover {
+    color: #3B99FC;
+    text-decoration: underline;
+}
+
